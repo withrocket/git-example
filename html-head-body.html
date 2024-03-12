@@ -3,18 +3,52 @@
     <title>브라우저 탭에 보이는 제목</title>
     <style>
       .div-1 {
-        width: 100px;
-        height: 100px;
-        padding: 10px;
-        color: #fff;
-        background-color: red;
-        box-sizing: border-box;
-        border: 1px solid #000;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        height: 200px;
+        background-color: grey;
+      }
+      .inner-div {
+        width: 200px;
+        height: 20px;
+      }
+      .div-2 {
+        width: 500px;
+        height: 400px;
+        margin-top: 10px;
+        background-color: grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
     </style>
   </head>
   <body>
-    <div class="div-1">이건 class 가 div-1 이야</div>
-    <div class="div-2">이건 class 가 div-2 이야</div>
+    <div class="div-1">
+      <div style="background-color: lightblue" class="inner-div">
+        div-1 안에 있는 inner-div-1
+      </div>
+      <div style="background-color: greenyellow" class="inner-div">
+        div-1 안에 있는 inner-div-2
+      </div>
+      <div style="background-color: orange" class="inner-div">
+        div-3 안에 있는 inner-div-3
+      </div>
+    </div>
+    <div class="div-2">
+      <div style="background-color: lightblue" class="inner-div">
+        div-2 안에 있는 inner-div-1
+      </div>
+      <div style="background-color: greenyellow" class="inner-div">
+        div-2 안에 있는 inner-div-2
+      </div>
+      <div style="background-color: orange" class="inner-div">
+        div-2 안에 있는 inner-div-3
+      </div>
+    </div>
   </body>
 </html>
